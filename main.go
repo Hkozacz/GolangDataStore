@@ -2,6 +2,11 @@ package main
 
 import "fmt"
 
+func batchLoad(foo string) {
+	fmt.Println(foo)
+}
+
 func main() {
-	fmt.Println("Hello World!")
+	ds := NewDataStore(batchLoad)
+	ds.Load()
 }
