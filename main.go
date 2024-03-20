@@ -8,5 +8,5 @@ func batchLoad(foo string) {
 
 func main() {
 	ds := NewDataStore(batchLoad)
-	ds.Load()
+	ds.Load("Hello world")
 }
